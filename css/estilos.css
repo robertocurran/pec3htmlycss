@@ -121,9 +121,8 @@ header .menu-links .active {
     background-size: cover;
     color: var(--white-color);
     font-size: 5rem;
-    padding-bottom: 1em;
-    padding-top: 1em;
-    margin-bottom: 30px;
+    padding-bottom: 1.2em;
+    padding-top: 1.2em;
 }
 
 h1 {
@@ -141,9 +140,8 @@ main p {
     margin-bottom: 1rem;
 }
 
-.news-section {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+section {
+    padding-bottom: 3rem;
 }
 
 .news-container {
@@ -206,7 +204,6 @@ main p {
 
 .subscribe {
     background-color: var(--bulletin-bg-color);
-    padding-top: 2rem;
     padding-bottom: 4rem;
 }
 
@@ -307,8 +304,6 @@ footer #arrow-go-up {
 #symptoms {
     display: flex;
     flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
 }
 
 #symptoms > div {
@@ -321,6 +316,9 @@ footer #arrow-go-up {
     grid-gap: 0.5em;
     max-width: 100%;
     justify-content: space-between;
+    text-align: justify;
+    word-break: break-word;
+    hyphens: auto;
     margin-bottom: 1em;
 }
 
@@ -376,7 +374,7 @@ footer #arrow-go-up {
 }
 
 #videos-container .video-fluid {
-    padding-bottom: 56.25%; /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */
+    padding-bottom: 56.25%; /* Ratio de 16:9 */
     position: relative;
 }
 
@@ -459,7 +457,7 @@ footer #arrow-go-up {
 }
 
 /* Pantallas de escritorio */
-@media (orientation: landscape) {
+@media screen and (orientation: landscape) {
     @media (min-width: 992px) {
         .container {
             max-width: 900px;
@@ -480,7 +478,7 @@ footer #arrow-go-up {
 }
 
 /* Pantallas de móviles */
-@media (orientation: portrait) {
+@media screen and (orientation: portrait) {
     .container {
         max-width: 100%;
     }
@@ -521,7 +519,6 @@ footer #arrow-go-up {
     }
 
     .news-container article {
-        width: 100%;
         margin-bottom: 1rem;
     }
 
@@ -545,13 +542,6 @@ footer #arrow-go-up {
         content: "";
         margin-right: 0em;
         margin-left: 0em;
-    }
-
-    #symptoms {
-        display: flex;
-        flex-direction: column;
-        flex-basis: 100%;
-        flex: 1;
     }
 
     #symptoms > div {
